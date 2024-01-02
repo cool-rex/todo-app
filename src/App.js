@@ -1,8 +1,8 @@
 import React, {Component} from "react";
-import Todos from "./Todo";
+import Todos from './Todos';
 
 
- class App extends Component() {
+ class App extends Component {
    state ={
       todos : [
         {id:1 , content:"Read my notes"},
@@ -13,6 +13,7 @@ import Todos from "./Todo";
    
     return (
       <div className="todo container">
+      <h1 className="center blue-text">Todo List</h1>
       <Todos todos={this.state.todos}/>
       </div>
   );
